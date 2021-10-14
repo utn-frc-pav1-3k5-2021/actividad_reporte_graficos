@@ -119,6 +119,11 @@
     <Compile Include="GUILayer\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUILayer\Reports\DSReporte.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReporte.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GUILayer\Reports\frmBugReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +160,7 @@
     <EmbeddedResource Include="GUILayer\Reports\frmBugReport.resx">
       <DependentUpon>frmBugReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\Reports\ReporteBugs.rdlc" />
     <EmbeddedResource Include="GUILayer\Usuarios\frmABMUsuario.resx">
       <DependentUpon>frmABMUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +177,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="GUILayer\Reports\DSReporte.xsc">
+      <DependentUpon>DSReporte.xsd</DependentUpon>
+    </None>
+    <None Include="GUILayer\Reports\DSReporte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReporte.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GUILayer\Reports\DSReporte.xss">
+      <DependentUpon>DSReporte.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

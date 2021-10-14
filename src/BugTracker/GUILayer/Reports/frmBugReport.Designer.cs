@@ -107,11 +107,12 @@
             // 
             // rpvBugs
             // 
-            this.rpvBugs.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rpvBugs.Location = new System.Drawing.Point(0, 50);
+            this.rpvBugs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpvBugs.LocalReport.ReportEmbeddedResource = "BugTracker.GUILayer.Reports.ReporteBugs.rdlc";
+            this.rpvBugs.Location = new System.Drawing.Point(0, 66);
             this.rpvBugs.Name = "rpvBugs";
             this.rpvBugs.ServerReport.BearerToken = null;
-            this.rpvBugs.Size = new System.Drawing.Size(800, 400);
+            this.rpvBugs.Size = new System.Drawing.Size(800, 384);
             this.rpvBugs.TabIndex = 2;
             // 
             // frmBugReport
